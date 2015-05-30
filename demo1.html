@@ -1,54 +1,103 @@
 <!DOCTYPE>
-<html>
+<html lang="zh-CN">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <head>
+
     <title>demo1</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
 
-    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <!-- 可选的Bootstrap主题文件（一般不用引入）
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-
+-->
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-</head>
-<body>
-<div class="container">
-    <!---->
-    <div class="page-header">
-        <h1>hello world!</h1>
-    </div>
-    <div class="content">
-        这是我的第一个HTML网页 ---by AmeyLiu
-    </div>
-    <!--栅格-->
-    <div class="page-header">
-        <h1>12 列</h1>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
-        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-        <!-- Optional: clear the XS cols if their content doesn't match in height -->
-        <div class="clearfix visible-xs-block"></div>
-        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-    </div>
-    <div class="page-header">
-        <h1>引用</h1>
-    </div>
-    <div class="blockquote">
-        <blockquote>
-            <p>天空没有鸟的痕迹，但我已飞过。</p>
-            <footer>泰戈尔 comes from <cite title="Source Title">Russian</cite></footer>
-        </blockquote>
-        </div>
+    <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        nav {
+            font-family: Arial;
+            font-size: large;
 
+        }
+        .navbar-inverse{
+            background-color:deepskyblue;
+        }
+
+        .navbar-inverse .navbar-brand {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">我的第一个网页项目</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" placeholder="邮箱或者用户名" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="密码" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">登陆</button>
+            </form>
+        </div><!--导航条-->
+    </div>
+</nav>
+
+
+    <!--<div class="jumbotron">-->
+        <!--<div class="container">-->
+        <!--<nav>My first project!</nav>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>我爱世界</h1>
+
+        <p>这是一个简单的营销或信息网站的模板。它包括一个大型的呼出叫做超大屏幕和三项支持内容。用它作为一个起点,创建更独特的东西。</p>
+
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多 »</a></p>
+    </div>
 </div>
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+<div class="row">
+    <div class="col-md-4">
+        <h2>第一节</h2>
+        <p>学会了制作导航条，同时学会了如何寻找要修改的属性。</p>
+        <p><a class="btn btn-default" href="#" role="button">查看细节 »</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>第二节</h2>
+        <p>学会了如何用container和div设置块状区域</p>
+        <p><a class="btn btn-default" href="#" role="button">查看细节 »</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>第三节</h2>
+        <p>下一步要学会制作一个简单的网页。</p>
+        <p><a class="btn btn-default" href="#" role="button">查看细节 »</a></p>
+    </div>
+</div>
+    <footer>
+        <p>© Company 2015</p>
+    </footer>
 </body>
+
 </html>
